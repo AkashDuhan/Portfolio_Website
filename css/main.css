@@ -1,0 +1,228 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: rgb(230, 234, 238);
+}
+body p:hover{
+    cursor:context-menu;
+}
+
+.my-name{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.my-designation{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+
+body .myintro{
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+body p{
+    margin-left: 2px;
+    margin-right: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgb(58, 51, 51);
+}
+body h1{margin-bottom: 0;}
+body h3{margin-top: 0;}
+
+
+div.outer-most-box {
+    margin: 10px;
+    min-width: 450px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: rgb(255, 255, 255);
+    color: pink;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    z-index: 2;
+}
+
+div.header {
+    min-height: 60px;
+    background-color: rgb(85, 82, 82);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header p{
+    padding-left: 10px;
+    flex:1fr;
+    color: aliceblue;
+}
+.top-left-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.download-cv {
+    color: rgb(207, 201, 186);
+    font-size: 16px;
+    border: 1px;
+    margin: 18px;
+    border-style: solid;
+    border-radius: 9px;
+    background-color: none;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.download-cv :hover {
+    border: none;
+    color: rgb(85, 82, 82);
+    background-color: rgb(255, 255, 255);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.header ul {
+    height: 40px;
+    width: 150px;
+    margin: 0;
+}
+.header li{
+    display: inline-block;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+
+.intro{
+    color: rgb(133, 114, 114);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.icons img{
+    height: 25px;
+    width: 25px;
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects img{
+    height: 120px;
+    margin-right: 10px;
+}
+
+.projects p {
+    text-shadow: none;
+}
+.projects a {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 200px;
+    max-width: 550px;
+    color: rgb(82, 71, 73);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgb(141, 137, 137);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.5px;
+    border-color: rgb(223, 201, 201);
+}
+.projects a div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.projects span{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.contact-box{
+    margin-bottom: 0px;
+    background-color: rgb(223, 223, 216);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 2fr 1fr;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+
+.contact-me {
+    margin-left: 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(82, 72, 121);
+    text-shadow: 1px 1px 2px rgb(87, 82, 82);
+}
+.contact-me input, .contact-me textarea {
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: none;
+    font-size: 20px;
+    font-style: 'Source Sans Pro', sans-serif;
+    padding: 4px;
+    padding-left: 10px;
+    border: none;
+    text-shadow: 1px 1px 2px rgb(211, 203, 203);
+
+}
+.contact-me input :active{
+    border-color: blue;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.contact-me button{
+    background-color: rgb(216, 213, 213);
+    color: rgb(82, 72, 121);
+    border-color: rgb(82, 72, 121);
+    font-size: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 5px;
+    border-width: 1px;
+    border-radius: 7px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    color: rgb(45, 46, 54);
+    text-shadow: 1px 1px 2px rgb(184, 171, 171);
+}
+.contact a{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 2px;
+    color: rgb(107, 101, 101);
+}
+
+.contact-me li{
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
