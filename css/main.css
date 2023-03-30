@@ -12,6 +12,10 @@ body p:hover{
     cursor:context-menu;
 }
 
+span:hover, h5:hover{
+    cursor:context-menu;
+}
+
 .my-name{
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -133,7 +137,7 @@ div.header {
 .projects p {
     text-shadow: none;
 }
-.projects a {
+.project-box {
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -145,10 +149,10 @@ div.header {
     text-shadow: 1px 1px 2px rgb(141, 137, 137);
     border-width: 1px;
     border-style: solid;
-    border-radius: 0.5px;
+    border-radius: 20px;
     border-color: rgb(223, 201, 201);
 }
-.projects a div{
+.projects div{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -164,10 +168,6 @@ div.header {
     margin-bottom: 0px;
     background-color: rgb(223, 223, 216);
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex: 2fr 1fr;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
 }
@@ -181,7 +181,7 @@ div.header {
 }
 .contact-me input, .contact-me textarea {
     margin-bottom: 5px;
-    width: 100%;
+    width: 95%;
     background-color: none;
     font-size: 20px;
     font-style: 'Source Sans Pro', sans-serif;
@@ -230,4 +230,130 @@ div.header {
 .contact-me li{
     margin-bottom: 2px;
     margin-top: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(223, 223, 216);
+    color: rgb(65, 62, 62);
+    font-size: 20px;
+    font-style: 'Source Sans Pro', sans-serif;
+    text-shadow: 1px 2px 2px rgb(211, 203, 203);
+}
+footer a {
+    color: #383535;
+    font-size: 700;
+    text-decoration: none;
+}
+
+.projects img {
+    pointer-events: none;
+}
+
+/*New Codes*/
+
+hr {
+    background-color: #555;
+    border: none;
+    display: block;
+    height: 4px;
+    overflow: visible;
+    position: relative;
+    width: 80%;
+}
+
+hr:before {
+    background-color: rgb(57, 58, 63);
+    content: '';
+    display: block;
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 20%;
+    z-index: 1;
+}
+
+.skills-outermostbox{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000000;
+    font-size: 25px;
+}
+.skills-outermostbox p {
+    font-size: 16px;
+    text-shadow: none;
+}
+
+.about-row
+{
+    margin: 30px 70px 30px 70px;
+}
+
+@media screen and (max-width: 900px) {
+    .about-row{
+        margin: 30px 20px 30px 20px;
+    }
+}
+
+.about-legend
+{
+    display: inline-block;
+    width: 20px;
+}
+
+.skill-cat
+{
+    margin-top: 20px;
+    max-width: 200px;
+    min-height: 50px;
+    text-align: center;
+    color: rgb(100, 105, 105);
+}
+
+.skill-bar
+{
+    position: relative;
+    height: 9px;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #CCCCCC, #FFFFFF);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.skill-spec
+{
+    position: absolute;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, rgba(51,198,184, 1), rgba(51,198,184, 0.5));
+    border-radius: 3px;
+    z-index: 10;
+}
+
+/* Tooltip text */
+.skill-bar .tooltiptext {
+  visibility: hidden;
+  font-size: 14px;
+  width: 120px;
+  background-image: linear-gradient(to bottom right, #F8F8F8, #FFFFFF);
+  color: #000000;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  top: -38px;
+  right: 55%;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 10;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.skill-bar:hover .tooltiptext {
+  visibility: visible;
 }
